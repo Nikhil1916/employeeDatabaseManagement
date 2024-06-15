@@ -1,0 +1,90 @@
+body {
+    font-family: sans-serif;
+    padding: 0px 10px;
+    /* background-color: red; */
+}
+:root {
+    --btn: #dbdbdb;
+    --btn-hover: #cacaca;
+    --item-bg: #f0f0f0;
+    --modal-bg: rgba(141,141,141,0.541)
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+}
+
+header button {
+    padding: 15px 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--btn);
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: var(--btn-hover);
+}
+
+.employees-table {
+    display: flex;
+    width: 50%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.employees-table > div {
+    border: 1px solid black;
+    height: 450px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.employes-list {
+    width: 30%;
+    padding: 10px;
+}
+
+.employes-list-names, .employee-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.employee-info {
+    align-items: center;
+}
+
+
+.employee-detail {
+    padding: 10px;
+    width: 70%;
+}
+
+.employes-list > p , .employee-detail >p {
+    padding-bottom: 10px;
+    /* width: 100%; */
+    border-bottom: 1px solid black;
+}
+
+.delete {
+    color: red;
+}
+
+.employee-name-item {
+ background-color: var(--item-bg);
+ padding: 15px; 
+ border-radius: 20px;
+ display: flex;
+ justify-content: space-between;
+ cursor: pointer;
+ text-align: center;
+}
+
+.selected, employee-name-item:hover {
+    background-color: var(--btn-hover);
+}
