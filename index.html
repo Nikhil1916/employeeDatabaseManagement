@@ -7,7 +7,7 @@
         <div class="app">
             <header class="flex">
                 <h1>Employee Management Database</h1>
-                <button>Add Employee</button>
+                <button class="create-employee">Add Employee</button>
             </header>
             <div class="employees-table">
                 <div class="employes-list">
@@ -18,6 +18,22 @@
                     <p class="employee-title">Employee Information</p>
                     <div class="employee-info"></div>
                 </div>
+            </div>
+            <div class="addEmployee">
+                <form class="addEmployee_create">
+                    Add a new Employee
+                    <div>
+                      <input type="text" name="firstName" placeholder="First Name" required/>
+                      <input type="text" name="lastName" placeholder="Last Name" required/>
+                    </div>
+                    <input type="text" name="imageUrl" placeholder="Image URL (Optional)" />
+                    <input type="email" name="email" placeholder="Email" required/>
+                    <input type="number" name="contactNumber" placeholder="Contact" required/>
+                    <input type="number" name="salary" placeholder="Salary" required />
+                    <input type="text" name="address" placeholder="Address" required/>
+                    <input type="date" name="dob" placeholder="Date of Birth" class="employee-dob-input" required/>
+                    <input type="submit" class="employee-form-submit" value="Submit">
+                  </form>
             </div>
         </div>
         <script src="./src/script.js" type="module"></script>

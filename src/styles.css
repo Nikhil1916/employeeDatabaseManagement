@@ -85,6 +85,39 @@ header button:hover {
  text-align: center;
 }
 
-.selected, employee-name-item:hover {
+.selected, employee-name-item:hover, .employee-form-submit:hover {
     background-color: var(--btn-hover);
+}
+
+
+.addEmployee {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--modal-bg);
+    display: none;
+}
+
+.addEmployee_create {
+    width: 400px;
+    background-color: white;
+    box-shadow: 0 0 50px gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 50px auto;
+    z-index: 1;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    border: 1px rgba(211, 211, 211, 0.5);
+
 }
